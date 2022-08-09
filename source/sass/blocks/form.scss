@@ -1,0 +1,68 @@
+.form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+
+  input[type="text"],
+  input[type="tel"],
+  textarea {
+    appearance: none;
+
+    color: $white;
+    border-radius: 0;
+    border: 1px solid rgba($color: $white, $alpha: 0.01);
+    outline: none;
+    background: rgba(4, 20, 39, 0.15);
+    border-radius: 3px;
+
+    &::placeholder {
+      color: $white;
+    }
+
+    &:hover,
+    &:focus {
+      border: 1px solid $white;
+    }
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+
+.form__checkbox {
+  font-size: 14px;
+  position: relative;
+  padding-left: 33px;
+  cursor: pointer;
+  color: rgba($color: $white, $alpha: 0.8);
+
+  &:hover {
+    color: rgba($color: $white, $alpha: 1);
+  }
+
+  input[type="checkbox"] + span {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    opacity: 0.4;
+    border: 1px solid $white;
+  }
+
+  input[type="checkbox"]:checked + span {
+    opacity: 1;
+    background-image: url("data:image/svg+xml,%3Csvg fill='none' height='6' viewBox='0 0 9 6' width='9' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m.5 2 3 3 4.5-4.5' stroke='%23fff'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 9px 6px;
+  }
+
+  input[type="checkbox"]:hover + span,
+  input[type="checkbox"]:focus + span {
+    opacity: 1;
+  }
+}

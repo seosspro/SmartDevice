@@ -1,0 +1,155 @@
+.about-us {
+  position: relative;
+  min-height: 320px;
+  padding-top: 28px;
+  padding-right: 145px;
+  padding-bottom: 100px;
+  padding-left: 318px;
+  max-width: 1220px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    width: 320px;
+    left: 10px;
+    height: 317px;
+    background-image: url("../img/bg-about-us-2022-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-about-us-2022-desktop@2x.png");
+      background-size: 220px 317px;
+    }
+  }
+}
+
+.about-us__header {
+  font-family: $roboto-condensed;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50px;
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.about-us__text {
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 21px;
+
+  &:last-of-type {
+    margin-bottom: 38px;
+  }
+}
+
+.about-us__responsive-text--tablet {
+  display: none;
+}
+
+.about-us__button {
+  width: 180px;
+  margin-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  letter-spacing: 0.7px;
+  border: 1px solid #00b2ff;
+  border-radius: 3px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #00b2ff;
+  color: $baby-blue;
+  border-color: $baby-blue;
+}
+
+@media (max-width: $tablet-width) {
+  .about-us {
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 73px;
+    padding-left: 213px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 0;
+      width: 251.08px;
+      height: 361.79px;
+      background-image: url("../img/bg-about-us-2005-tablet@1x.png");
+      background-repeat: no-repeat;
+      background-size: auto;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-about-us-2005-tablet@2x.png");
+        background-size: 244px 362px;
+      }
+    }
+  }
+
+  .about-us__header {
+    font-size: 32px;
+    margin-bottom: 22px;
+  }
+
+  .about-us__text {
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 41px;
+    }
+  }
+
+  .about-us__responsive-text--desktop {
+    display: none;
+  }
+
+  .about-us__responsive-text--tablet {
+    display: inline;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about-us {
+    padding-top: 14px;
+    padding-right: 11px;
+    padding-bottom: 55px;
+    padding-left: 14px;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .about-us__header {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .about-us__text {
+    margin-bottom: 40px;
+    padding-left: 3px;
+
+    &:last-of-type {
+      margin-bottom: 28px;
+    }
+  }
+
+  .about-us__button {
+    margin-left: 3px;
+  }
+}
+
+.about-us__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

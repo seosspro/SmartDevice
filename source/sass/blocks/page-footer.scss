@@ -1,0 +1,156 @@
+.page-footer {
+  background-color: #041827;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  padding-top: 65px;
+  padding-right: 19px;
+  padding-bottom: 35px;
+  padding-left: 15px;
+  justify-content: center;
+}
+
+.page-footer__base {
+  flex-shrink: 3;
+  width: 416px;
+  min-width: 216px;
+}
+
+.page-footer__logo-link {
+  display: block;
+  width: 216px;
+  height: 52px;
+  margin-bottom: 54px;
+  margin-left: -5px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__years-of-service {
+  display: none;
+}
+
+.page-footer__social {
+  column-gap: 20px;
+  list-style: none;
+  display: flex;
+}
+
+.page-footer__nav {
+  flex-shrink: 5;
+  width: 558px;
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer__contacts {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  flex-shrink: 2;
+  width: 425px;
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer__wrapper {
+    flex-wrap: wrap;
+    padding-top: 19px;
+    padding-right: 0;
+    padding-bottom: 21px;
+    padding-left: 0;
+  }
+
+  .page-footer__base {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 24px;
+    padding-bottom: 7px;
+    padding-left: 25px;
+  }
+
+  .page-footer__logo-link {
+    margin-bottom: 0;
+  }
+
+  .page-footer__years-of-service {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    display: block;
+    padding-top: 17px;
+    padding-left: 19px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    color: $dark-grey;
+  }
+
+  .page-footer__social {
+    margin-top: 12px;
+  }
+
+  .page-footer__nav {
+    width: 50%;
+    min-width: 235px;
+    padding-top: 38px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+  }
+
+  .page-footer__contacts {
+    align-items: flex-start;
+    width: 50%;
+    padding-top: 38px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-footer__wrapper {
+    padding-top: 46px;
+    padding-bottom: 0;
+  }
+
+  .page-footer__base {
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .page-footer__logo-link {
+    margin-bottom: 26px;
+    margin-left: -10px;
+  }
+
+  .page-footer__years-of-service {
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .page-footer__social {
+    margin-bottom: 38px;
+  }
+
+  .page-footer__nav {
+    width: 100%;
+    padding: 0;
+  }
+
+  .page-footer__contacts {
+    width: 100%;
+    padding: 0;
+  }
+}

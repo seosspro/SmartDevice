@@ -1,0 +1,134 @@
+.advantages {
+  padding-top: 112px;
+  padding-right: 30px;
+  padding-bottom: 48px;
+  padding-left: 30px;
+  max-width: 1230px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  position: relative;
+  width: 48.7%;
+  min-height: 299px;
+  margin-bottom: 30px;
+  padding-top: 39px;
+  padding-right: 42px;
+  padding-bottom: 49px;
+  padding-left: 42px;
+  cursor: pointer;
+  border: 1px solid $border-color;
+  border-left: 5px solid $baby-blue;
+  background-color: $white;
+
+  &:hover {
+    transition: 0.3s ease-in-out;
+    color: $white;
+    border-color: $baby-blue;
+    background-color: $baby-blue;
+  }
+
+  &:hover h3 {
+    transition: 0.3s ease-in-out;
+    color: $white;
+  }
+
+  &:hover svg {
+    transition: 0.3s ease-in-out;
+
+    fill: $white;
+  }
+
+  svg {
+    margin-bottom: 21px;
+
+    fill: $baby-blue;
+  }
+
+  h3 {
+    font-family: $roboto-condensed;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 21px;
+    color: $baby-blue;
+  }
+
+  p {
+    line-height: 22px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .advantages {
+    padding-top: 54px;
+    padding-right: 25px;
+    padding-bottom: 8px;
+    padding-left: 25px;
+  }
+
+  .advantages__item {
+    width: 47.9%;
+    min-height: 233px;
+    padding-top: 22px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    padding-left: 25px;
+    border-left: 5px solid $baby-blue;
+
+    svg {
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      line-height: 20px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .advantages {
+    padding-top: 37px;
+    padding-right: 16px;
+    padding-bottom: 0;
+    padding-left: 14px;
+  }
+
+  .advantages__list {
+    flex-direction: column;
+  }
+
+  .advantages__item {
+    width: 100%;
+    min-height: auto;
+    margin-bottom: 20px;
+    padding-top: 25px;
+
+    svg {
+      margin-bottom: 5px;
+    }
+
+    h3 {
+      font-size: 20px;
+      line-height: 32px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      margin-top: 8px;
+      margin-bottom: 20px;
+    }
+  }
+}
