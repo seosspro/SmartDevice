@@ -96,6 +96,11 @@
     text-transform: uppercase;
     background: #041427;
     border-radius: 3px;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      margin-left: 0;
+    }
   }
 
   .form__checkbox {

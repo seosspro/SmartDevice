@@ -65,10 +65,18 @@
     margin-bottom: 32px;
     padding-top: 14px;
     padding-bottom: 15px;
-    letter-spacing: 0.7px;
     color: $white;
-    border: 1px solid $white;
-    background-color: $baby-blue;
+    border: none;
+    border-radius: 3px;
+    background-color: #041427;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
   }
 
   .form__checkbox {

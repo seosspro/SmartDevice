@@ -29,9 +29,8 @@
 }
 
 .products__item {
-  width: 31.6%;
-  height: 620px;
   margin-right: 2.6%;
+  max-height: 650px;
   margin-bottom: 30px;
 
   &:nth-of-type(3n) {
