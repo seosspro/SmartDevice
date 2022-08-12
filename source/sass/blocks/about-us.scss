@@ -53,10 +53,8 @@
   margin-bottom: 10px;
   padding-top: 12px;
   padding-bottom: 13px;
-  letter-spacing: 0.7px;
   border: 1px solid #00b2ff;
   border-radius: 3px;
-  text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -64,8 +62,8 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  cursor: pointer;
 
-  color: #00b2ff;
   color: $baby-blue;
   border-color: $baby-blue;
 }
@@ -82,8 +80,6 @@
       position: absolute;
       top: 15px;
       left: 0;
-      width: 251.08px;
-      height: 361.79px;
       background-image: url("../img/bg-about-us-2022-tablet@1x.png");
       background-repeat: no-repeat;
       background-size: auto;
@@ -152,4 +148,13 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.about-us__text--hidden {
+  display: none;
+}
+
+.about-us__text--show {
+  display: block;
+  transition: all 1s ease;
 }

@@ -54,7 +54,6 @@
     popup.classList.remove('modal--show');
     document.body.classList.remove('disable-scroll');
   };
-
   try {
     storage.name = localStorage.getItem('name');
     storage.phone = localStorage.getItem('phone');
@@ -105,3 +104,15 @@
     }
   });
 })();
+
+let btnShow = document.querySelector('.about-us__button');
+let hiddenText = document.querySelector('.about-us__text--hidden');
+
+btnShow.addEventListener('click', function () {
+  hiddenText.classList.toggle('about-us__text--show');
+  btnShow.innerHTML = 'Свернуть';
+
+  if (!hiddenText.classList.contains('about-us__text--show')) {
+    btnShow.innerHTML = 'Подробнее';
+  }
+});
