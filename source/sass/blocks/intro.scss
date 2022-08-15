@@ -19,7 +19,7 @@
   padding-left: 12px;
   color: $white;
 
-  @media (min-width: 1024px) {
+  @media (min-width: $tablet-width + 1px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +60,7 @@
   background-color: $baby-blue;
   border-radius: 3px;
 
-  @media (min-width: 1024px) {
+  @media (min-width: $tablet-width + 1px) {
     margin-right: 310px;
   }
 }
@@ -109,12 +109,8 @@
   .intro__wrapper {
     padding-top: 189px;
     padding-bottom: 153px;
-    padding-left: 88px;
-
-    @media (max-width: $tablet-width) {
-      text-align: left;
-      padding-left: 20px;
-    }
+    text-align: left;
+    padding-left: 20px;
   }
 
   .intro__header {
@@ -124,10 +120,6 @@
     margin-bottom: 29px;
     letter-spacing: 4.2px;
     text-transform: uppercase;
-
-    @media (max-width: $tablet-width) {
-      text-align: left;
-    }
   }
 
   .intro__desc {

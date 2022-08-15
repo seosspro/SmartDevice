@@ -9,7 +9,7 @@
 }
 
 .about-us::after {
-  @media (min-width: 1024px) {
+  @media (min-width: $tablet-width + 1px) {
     content: "";
     position: absolute;
     top: 32px;
@@ -20,33 +20,11 @@
     background-repeat: no-repeat;
     background-size: auto;
   }
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-about-us-2022-desktop@2x.png");
     background-size: 220px 317px;
   }
-}
-
-.about-us__header {
-  font-family: $roboto-condensed;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 50px;
-  margin: 0;
-  margin-bottom: 21px;
-}
-
-.about-us__text {
-  line-height: 22px;
-  margin: 0;
-  margin-bottom: 21px;
-
-  &:last-of-type {
-    margin-bottom: 38px;
-  }
-}
-
-.about-us__responsive-text--tablet {
-  display: none;
 }
 
 .about-us__button {
@@ -88,31 +66,34 @@
       background-size: 244px 362px;
     }
   }
+}
 
-  .about-us__header {
-    font-size: 32px;
-    margin-bottom: 22px;
-  }
+.about-us__header {
+  font-family: $roboto-condensed;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50px;
+  margin-bottom: 21px;
+}
 
-  .about-us__text {
-    margin-bottom: 20px;
+.about-us__text {
+  margin-bottom: 20px;
 
-    &:last-of-type {
-      margin-bottom: 41px;
-    }
-  }
-
-  .about-us__responsive-text--desktop {
-    display: none;
-  }
-
-  .about-us__responsive-text--tablet {
-    display: inline;
+  &:last-of-type {
+    margin-bottom: 41px;
   }
 }
 
-@media (max-width: $mobile-width) {
-  .about-us {
+.about-us__responsive-text--desktop {
+  display: none;
+}
+
+.about-us__responsive-text--tablet {
+  display: inline;
+}
+
+.about-us {
+  @media (max-width: $mobile-width) {
     padding-top: 14px;
     padding-right: 11px;
     padding-bottom: 55px;
@@ -122,24 +103,24 @@
       content: none;
     }
   }
+}
 
-  .about-us__header {
-    font-size: 28px;
-    margin-bottom: 15px;
+.about-us__header {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.about-us__text {
+  margin-bottom: 40px;
+  padding-left: 3px;
+
+  &:last-of-type {
+    margin-bottom: 28px;
   }
+}
 
-  .about-us__text {
-    margin-bottom: 40px;
-    padding-left: 3px;
-
-    &:last-of-type {
-      margin-bottom: 28px;
-    }
-  }
-
-  .about-us__button {
-    margin-left: 3px;
-  }
+.about-us__button {
+  margin-left: 3px;
 }
 
 .about-us__wrapper {

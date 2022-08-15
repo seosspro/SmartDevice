@@ -5,7 +5,7 @@
 }
 
 .ask-us::after {
-  @media (min-width: 1024px) {
+  @media (min-width: $tablet-width + 1px) {
     content: "";
     position: absolute;
     left: -342px;
@@ -19,8 +19,8 @@
 }
 
 .ask-us::before {
-  @media (min-width: 1024px) {
-    content: url("../../img/bg-ask-us-airplane-desktop@1x.png");
+  @media (min-width: $tablet-width + 1px) {
+    content: url("../img/bg-ask-us-airplane-desktop@1x.png");
     position: absolute;
     left: calc(50% - 598px);
     top: calc(25% - 30px);

@@ -20,13 +20,10 @@
       <div class="page-header__wrapper wrapper">
         <h1 class="visually-hidden">Smart Device - Умные технологии</h1>
         <a class="page-header__logo-link" aria-label="Логотип 'Smart Device'">
-          <svg class="page-header__logo page-header__logo--desktop" width="202" height="52">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite_auto.svg#logo-smart-device"></use>
-          </svg>
-          <svg class="page-header__logo page-header__logo--mobile" width="38" height="38">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite_auto.svg#logo-smart-device-mobile">
-            </use>
-          </svg>
+          <picture>
+            <source media='(max-width:767px)' srcset='./img/logo-smart-device-mobile.svg'>
+            <img src="./img/logo-smart-device.svg" alt="">
+          </picture>
         </a>
         <ul class="page-header__contacts-list">
           <li class="page-header__contacts-item page-header__contacts-item--mail">
@@ -131,12 +128,13 @@
               до&nbsp;10&nbsp;дней.
             </p>
             <p class="about-us__text">Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM,
-              CREE, HOLGLITRONIC, REFOND. Печатные платы и&nbsp;комплектующие Service Devices применяются
-              на&nbsp;предприятиях Российских Железных Дорог <span
-                class="about-us__responsive-text about-us__responsive-text--tablet">..</span> <span
-                class="about-us__responsive-text about-us__responsive-text--desktop">(РЖД), РоссАвтоПрома (ВАЗ,
+              CREE, HOLGLITRONIC, REFOND. <span
+                class="about-us__responsive-text about-us__responsive-text--tablet"></span> <span
+                class="about-us__responsive-text about-us__responsive-text--desktop"> Печатные платы
+                и&nbsp;комплектующие Service Devices применяются
+                на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ,
                 АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники
-                России.</span></p>
+                России.</p>
             <p class='about-us__text about-us__text--hidden'>Smart Device&nbsp;&mdash; это команда профессионалов. Через
               нас прошло
               более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых
@@ -157,12 +155,15 @@
             <li class="products__item">
               <a href="#" class="products__link products__link--production">
                 <picture>
+                  <!-- 1x: 290px; 2x: 580px -->
                   <source type="image/webp"
                     srcset="img/bg-products-production-desktop@1x.webp 1x, img/bg-products-production-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)"
                     srcset="img/bg-products-production-mobile@1x.jpg 1x, img/bg-products-production-mobile@2x.jpg 2x">
+                  <!-- 1x: 324px; 2x: 648px -->
                   <source media="(max-width: 1023px)"
                     srcset="img/bg-products-production-tablet@1x.jpg 1x, img/bg-products-production-tablet@2x.jpg 2x">
+                  <!-- 1x: 560px; 2x: 1120px -->
                   <img class="products__image" src="img/bg-products-production-desktop@1x.jpg"
                     srcset="img/bg-products-production-desktop@2x.jpg 2x" alt="Процесс производства печатных плат">
                 </picture>
@@ -172,12 +173,15 @@
             <li class="products__item">
               <a href="#" class="products__link products__link--installation">
                 <picture>
+                  <!-- 1x: 290px; 2x: 580px -->
                   <source type="image/webp"
                     srcset="img/bg-products-installation-desktop@1x.webp 1x, img/bg-products-installation-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)"
                     srcset="img/bg-products-installation-mobile@1x.jpg 1x, img/bg-products-installation-mobile@2x.jpg 2x">
+                  <!-- 1x: 324px; 2x: 648px -->
                   <source media="(max-width: 1023px)"
                     srcset="img/bg-products-installation-tablet@1x.jpg 1x, img/bg-products-installation-tablet@2x.jpg 2x">
+                  <!-- 1x: 560px; 2x: 1120px -->
                   <img class="products__image" src="img/bg-products-installation-desktop@1x.jpg"
                     srcset="img/bg-products-installation-desktop@2x.jpg 2x" alt="Процесс монтажа печатных плат">
                 </picture>
@@ -187,12 +191,15 @@
             <li class="products__item">
               <a href="#" class="products__link products__link--accessories">
                 <picture>
+                  <!-- 1x: 290px; 2x: 580px -->
                   <source type="image/webp"
                     srcset="img/bg-products-accessories-desktop@1x.webp 1x, img/bg-products-accessories-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)"
                     srcset="img/bg-products-accessories-mobile@1x.jpg 1x, img/bg-products-accessories-mobile@2x.jpg 2x">
+                  <!-- 1x: 324px; 2x: 648px -->
                   <source media="(max-width: 1023px)"
                     srcset="img/bg-products-accessories-tablet@1x.jpg 1x, img/bg-products-accessories-tablet@2x.jpg 2x">
+                  <!-- 1x: 560px; 2x: 1120px -->
                   <img class="products__image" src="img/bg-products-accessories-desktop@1x.jpg"
                     srcset="img/bg-products-accessories-desktop@2x.jpg 2x" width="370" height="620"
                     alt="Изображение светодиодной ленты">
@@ -213,7 +220,7 @@
               <label class="visually-hidden" for="ask-us-name">Введите Ваше имя:</label>
               <input type="text" name="name" placeholder="Имя" id="ask-us-name" required>
               <label class="visually-hidden" for="ask-us-phone">Введите Ваш номер телефона:</label>
-              <input type="tel" name="phone" placeholder="Телефон"
+              <input type="tel" name="phone" id='ask-us-phone' placeholder="Телефон"
                 pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" data-inputmask="+{7}(000)000-00-00" required>
               <label class="visually-hidden" for="ask-us-question">Введите Ваш вопрос:</label>
               <textarea name="question" cols="30" rows="6" placeholder="Ваш вопрос" id="ask-us-question"
@@ -237,8 +244,8 @@
           <label class="visually-hidden" for="call-name">Введите Ваше имя:</label>
           <input type="text" name="name" placeholder="Имя" id="call-name" required>
           <label class="visually-hidden" for="call-phone">Введите Ваш номер телефона:</label>
-          <input type="tel" name="phone" placeholder="Телефон" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}"
-            data-inputmask="+{7}(000)000-00-00" required>
+          <input type="tel" name="phone" placeholder="Телефон" id='call-phone'
+            pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" data-inputmask="+{7}(000)000-00-00" required>
           <label class="visually-hidden" for="call-question">Введите Ваш вопрос:</label>
           <textarea name="question" cols="30" rows="6" placeholder="Ваш вопрос" id="call-question" required></textarea>
           <button class="modal__button" type="submit">Отправить</button>
@@ -256,7 +263,7 @@
         <div class="page-footer__base">
           <a class="page-footer__logo-link" aria-label="Логотип 'Smart Device'">
             <svg class="page-footer__logo page-footer__logo--desktop" width="202" height="52">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite_auto.svg#logo-smart-device"></use>
+              <use xlink:href="img/sprite_auto.svg#logo-smart-device"></use>
             </svg>
           </a>
           <ul class="page-footer__social social">
