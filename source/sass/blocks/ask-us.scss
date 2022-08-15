@@ -1,26 +1,30 @@
 .ask-us {
   background-color: $baby-blue;
-  background-repeat: no-repeat;
-  background-position: calc(46% - 298px) 161px, calc(40% + 104px) -60px;
-  background-size: auto;
   overflow: hidden;
   position: relative;
-
-  @media (min-width: 1024px) {
-    background-image: url("../img/bg-ask-us-airplane-desktop@1x.png");
-  }
 }
 
 .ask-us::after {
   @media (min-width: 1024px) {
     content: "";
     position: absolute;
-    left: -542px;
-    top: -50px;
+    left: -342px;
+    top: -320px;
     width: 1265px;
     height: 100%;
     background: rgba(4, 24, 39, 0.5);
-    transform: rotate(-53deg);
+    transform: rotate(-38deg);
+    z-index: 1;
+  }
+}
+
+.ask-us::before {
+  @media (min-width: 1024px) {
+    content: url("../../img/bg-ask-us-airplane-desktop@1x.png");
+    position: absolute;
+    left: calc(50% - 598px);
+    top: calc(25% - 30px);
+    z-index: 2;
   }
 }
 

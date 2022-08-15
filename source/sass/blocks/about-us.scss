@@ -6,8 +6,10 @@
   padding-bottom: 100px;
   padding-left: 318px;
   max-width: 1220px;
+}
 
-  &::before {
+.about-us::after {
+  @media (min-width: 1024px) {
     content: "";
     position: absolute;
     top: 32px;
@@ -17,11 +19,10 @@
     background-image: url("../img/bg-about-us-2022-desktop@1x.png");
     background-repeat: no-repeat;
     background-size: auto;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-about-us-2022-desktop@2x.png");
-      background-size: 220px 317px;
-    }
+  }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-about-us-2022-desktop@2x.png");
+    background-size: 220px 317px;
   }
 }
 
@@ -68,26 +69,23 @@
   border-color: $baby-blue;
 }
 
-@media (max-width: $tablet-width) {
-  .about-us {
+.about-us::before {
+  @media (max-width: $tablet-width) {
     padding-top: 15px;
     padding-right: 20px;
     padding-bottom: 73px;
     padding-left: 213px;
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background-image: url("../img/bg-about-us-2022-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: auto;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 15px;
-      left: 0;
-      background-image: url("../img/bg-about-us-2022-tablet@1x.png");
-      background-repeat: no-repeat;
-      background-size: auto;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/bg-about-us-2022-tablet@2x.png");
-        background-size: 244px 362px;
-      }
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-about-us-2022-tablet@2x.png");
+      background-size: 244px 362px;
     }
   }
 
