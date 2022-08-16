@@ -1,13 +1,11 @@
 .intro {
   background-color: $dark-grey;
-  background-image: url("../img/bg-header-board-desktop@1x.png"),
-    url("data:image/svg+xml,%3Csvg fill='none' height='641' viewBox='0 0 671 641' width='671' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m626.842 159.584-274.675 475.75-274.6747-475.75z' opacity='.2' stroke='%23fff'/%3E%3Cpath d='m347.148 357.75-160.648 278.25-160.6477-278.25z' opacity='.2' stroke='%23fff'/%3E%3Cg fill='%23fff'%3E%3Ccircle cx='77' cy='159' r='5'/%3E%3Ccircle cx='26' cy='358' r='5'/%3E%3Ccircle cx='187' cy='636' r='5'/%3E%3Ccircle cx='352' cy='635' r='5'/%3E%3Ccircle cx='627' cy='159' r='5'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("../img/bg-header-board-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-header-board-desktop@2x.png"),
-      url("data:image/svg+xml,%3Csvg fill='none' height='641' viewBox='0 0 671 641' width='671' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m626.842 159.584-274.675 475.75-274.6747-475.75z' opacity='.2' stroke='%23fff'/%3E%3Cpath d='m347.148 357.75-160.648 278.25-160.6477-278.25z' opacity='.2' stroke='%23fff'/%3E%3Cg fill='%23fff'%3E%3Ccircle cx='77' cy='159' r='5'/%3E%3Ccircle cx='26' cy='358' r='5'/%3E%3Ccircle cx='187' cy='636' r='5'/%3E%3Ccircle cx='352' cy='635' r='5'/%3E%3Ccircle cx='627' cy='159' r='5'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("../img/bg-header-board-desktop@2x.png");
     background-size: cover;
   }
 }
@@ -91,17 +89,13 @@
 
 @media (max-width: $tablet-width) {
   .intro {
-    background-image: url("../img/bg-header-board-tablet@1x.png"),
-      url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg fill='none' viewBox='0 0 529 441' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m494.16 60.956-216.43 374.87-216.43-374.87 432.86-1e-4z' opacity='.2' stroke='%23fff'/%3E%3Cpath d='m273.58 217.23-126.51 219.12-126.51-219.12h253.01z' opacity='.2' stroke='%23fff'/%3E%3Ccircle cx='60.724' cy='60.39' r='3.9431' fill='%23fff'/%3E%3Ccircle cx='20.504' cy='217.32' r='3.9431' fill='%23fff'/%3E%3Ccircle cx='147.47' cy='436.56' r='3.9431' fill='%23fff'/%3E%3Ccircle cx='277.59' cy='435.77' r='3.9431' fill='%23fff'/%3E%3Ccircle cx='494.46' cy='60.39' r='3.9431' fill='%23fff'/%3E%3C/svg%3E%0A"),
-      url("../img/bg-header-tablet@1x.png");
+    background-image: url("../img/bg-header-board-tablet@1x.png");
     background-repeat: no-repeat;
     background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       min-height: 686px;
-      background-image: url("../img/bg-header-board-tablet@2x.png"),
-        url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg fill='none' viewBox='0 0 529 441' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m494.16 60.956-216.43 374.87-216.43-374.87 432.86-1e-4z' opacity='.2' stroke='%23fff'/%3E%3Cpath d='m273.58 217.23-126.51 219.12-126.51-219.12h253.01z' opacity='.2' stroke='%23fff'/%3E%3Ccircle cx='60.724' cy='60.39' r='3.9431' fill='%23fff'/%3E%3Ccircle cx='20.504' cy='217.32' r='3.9431' fill='%23fff'/%3E%3Ccircle cx='147.47' cy='436.56' r='3.9431' fill='%23fff'/%3E%3Ccircle cx='277.59' cy='435.77' r='3.9431' fill='%23fff'/%3E%3Ccircle cx='494.46' cy='60.39' r='3.9431' fill='%23fff'/%3E%3C/svg%3E%0A"),
-        url("../img/bg-header-tablet@2x.png");
+      background-image: url("../img/bg-header-board-tablet@2x.png");
       background-size: cover;
     }
   }
@@ -150,16 +144,12 @@
 @media (max-width: $mobile-width) {
   .intro {
     min-height: 647px;
-    background-image: url("../img/bg-header-board-mobile@1x.png"),
-      url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg fill='none' viewBox='0 0 506 430' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m472.04 67.352-206.72 358.06-206.72-358.06h413.45z' opacity='.2' stroke='%23fff'/%3E%3Cpath d='m261.32 216.65-120.82 209.26-120.82-209.26h241.63z' opacity='.2' stroke='%23fff'/%3E%3Ccircle cx='58.011' cy='66.789' r='3.7669' fill='%23fff'/%3E%3Ccircle cx='19.589' cy='216.71' r='3.7669' fill='%23fff'/%3E%3Ccircle cx='140.88' cy='426.16' r='3.7669' fill='%23fff'/%3E%3Ccircle cx='265.19' cy='425.4' r='3.7669' fill='%23fff'/%3E%3Ccircle cx='472.37' cy='66.789' r='3.7669' fill='%23fff'/%3E%3C/svg%3E%0A"),
-      url("../img/bg-header-mobile@1x.png");
+    background-image: url("../img/bg-header-board-mobile@1x.png");
     background-repeat: no-repeat;
     background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-header-board-mobile@2x.png"),
-        url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg fill='none' viewBox='0 0 506 430' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m472.04 67.352-206.72 358.06-206.72-358.06h413.45z' opacity='.2' stroke='%23fff'/%3E%3Cpath d='m261.32 216.65-120.82 209.26-120.82-209.26h241.63z' opacity='.2' stroke='%23fff'/%3E%3Ccircle cx='58.011' cy='66.789' r='3.7669' fill='%23fff'/%3E%3Ccircle cx='19.589' cy='216.71' r='3.7669' fill='%23fff'/%3E%3Ccircle cx='140.88' cy='426.16' r='3.7669' fill='%23fff'/%3E%3Ccircle cx='265.19' cy='425.4' r='3.7669' fill='%23fff'/%3E%3Ccircle cx='472.37' cy='66.789' r='3.7669' fill='%23fff'/%3E%3C/svg%3E%0A"),
-        url("../img/bg-header-mobile@2x.png");
+      background-image: url("../img/bg-header-board-mobile@2x.png");
       background-size: cover;
     }
   }

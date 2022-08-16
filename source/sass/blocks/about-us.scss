@@ -6,6 +6,17 @@
   padding-bottom: 100px;
   padding-left: 318px;
   max-width: 1220px;
+
+  @media (max-width: $mobile-width) {
+    padding-top: 14px;
+    padding-right: 11px;
+    padding-bottom: 55px;
+    padding-left: 14px;
+
+    &::before {
+      content: none;
+    }
+  }
 }
 
 .about-us::after {
@@ -42,6 +53,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   cursor: pointer;
+  margin-left: 3px;
 
   color: $baby-blue;
   border-color: $baby-blue;
@@ -60,11 +72,11 @@
     background-image: url("../img/bg-about-us-2022-tablet@1x.png");
     background-repeat: no-repeat;
     background-size: auto;
+  }
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-about-us-2022-tablet@2x.png");
-      background-size: 244px 362px;
-    }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-about-us-2022-tablet@2x.png");
+    background-size: 244px 362px;
   }
 }
 
@@ -76,38 +88,12 @@
   margin-bottom: 21px;
 }
 
-.about-us__text {
-  margin-bottom: 20px;
-
-  &:last-of-type {
-    margin-bottom: 41px;
-  }
-}
-
 .about-us__responsive-text--desktop {
   display: none;
 }
 
 .about-us__responsive-text--tablet {
   display: inline;
-}
-
-.about-us {
-  @media (max-width: $mobile-width) {
-    padding-top: 14px;
-    padding-right: 11px;
-    padding-bottom: 55px;
-    padding-left: 14px;
-
-    &::before {
-      content: none;
-    }
-  }
-}
-
-.about-us__header {
-  font-size: 28px;
-  margin-bottom: 15px;
 }
 
 .about-us__text {
@@ -117,10 +103,6 @@
   &:last-of-type {
     margin-bottom: 28px;
   }
-}
-
-.about-us__button {
-  margin-left: 3px;
 }
 
 .about-us__wrapper {
