@@ -88,14 +88,6 @@
   margin-bottom: 21px;
 }
 
-.about-us__responsive-text--desktop {
-  display: none;
-}
-
-.about-us__responsive-text--tablet {
-  display: inline;
-}
-
 .about-us__text {
   margin-bottom: 40px;
   padding-left: 3px;
@@ -118,4 +110,12 @@
 .about-us__text--show {
   display: block;
   transition: all 1s ease;
+}
+
+.about-us__hidden-mobile {
+  display: block;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }

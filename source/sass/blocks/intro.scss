@@ -175,19 +175,13 @@
     line-height: 25px;
     width: 100%;
     margin-bottom: 40px;
-
-    @media (max-width: $tablet-width) {
-      padding-left: 0;
-    }
+    padding-left: 0;
   }
 
   .intro__button {
     width: 287px;
     margin: 0 auto;
-
-    @media (max-width: $tablet-width) {
-      width: 100%;
-    }
+    width: 100%;
   }
 
   .intro__button-text--desktop {
