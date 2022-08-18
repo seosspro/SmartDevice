@@ -8,7 +8,7 @@
 .page-header__wrapper {
   display: flex;
   padding: 33px 19px 33px 16px;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -25,10 +25,6 @@
 
   &:active {
     opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width + 1px) {
-    margin-right: 190px;
   }
 }
 
@@ -52,7 +48,6 @@
 
 .page-header__contacts-item--phone {
   position: relative;
-  margin-left: 88px;
 }
 
 .page-header__contacts-item a {

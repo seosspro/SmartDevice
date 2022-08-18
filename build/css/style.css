@@ -68,9 +68,9 @@ a {
   display: -ms-flexbox;
   display: flex;
   padding: 33px 19px 33px 16px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -118,7 +118,6 @@ a {
 
 .page-header__contacts-item--phone {
   position: relative;
-  margin-left: 88px;
 }
 
 .page-header__contacts-item a {
@@ -166,10 +165,9 @@ a {
 .about-us {
   position: relative;
   min-height: 320px;
-  padding-top: 28px;
   padding-right: 145px;
-  padding-bottom: 100px;
-  padding-left: 318px;
+  padding-left: 250px;
+  padding-bottom: 80px;
   max-width: 1220px;
 }
 
@@ -202,7 +200,6 @@ a {
 }
 
 .about-us__text {
-  margin-bottom: 40px;
   padding-left: 3px;
 }
 
@@ -1216,10 +1213,6 @@ a {
 }
 
 @media (min-width: 1024px) {
-  .page-header__logo-link {
-    margin-right: 190px;
-  }
-
   .page-header__contacts-item--mail a {
     margin-right: 70px;
   }
@@ -1341,10 +1334,13 @@ a {
     display: none;
   }
 
+  .about-us {
+    padding-left: 210px;
+  }
+
   .about-us::before {
     padding-top: 15px;
-    padding-right: 20px;
-    padding-bottom: 73px;
+    padding-bottom: 370px;
     padding-left: 213px;
     content: "";
     position: absolute;
@@ -1352,7 +1348,7 @@ a {
     left: 0;
     background-image: url("../img/bg-about-us-2022-tablet@1x.png");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
   }
 
   .advantages__list {
@@ -1978,7 +1974,7 @@ a {
 
   .about-us::before {
     background-image: url("../img/bg-about-us-2022-tablet@2x.png");
-    background-size: 244px 362px;
+    background-size: contain;
   }
 
   .intro {

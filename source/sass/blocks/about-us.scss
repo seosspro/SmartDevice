@@ -1,10 +1,9 @@
 .about-us {
   position: relative;
   min-height: 320px;
-  padding-top: 28px;
   padding-right: 145px;
-  padding-bottom: 100px;
-  padding-left: 318px;
+  padding-left: 250px;
+  padding-bottom: 80px;
   max-width: 1220px;
 
   @media (max-width: $mobile-width) {
@@ -16,6 +15,10 @@
     &::before {
       content: none;
     }
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 210px;
   }
 }
 
@@ -62,8 +65,7 @@
 .about-us::before {
   @media (max-width: $tablet-width) {
     padding-top: 15px;
-    padding-right: 20px;
-    padding-bottom: 73px;
+    padding-bottom: 370px;
     padding-left: 213px;
     content: "";
     position: absolute;
@@ -71,12 +73,12 @@
     left: 0;
     background-image: url("../img/bg-about-us-2022-tablet@1x.png");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-about-us-2022-tablet@2x.png");
-    background-size: 244px 362px;
+    background-size: contain;
   }
 }
 
@@ -89,7 +91,6 @@
 }
 
 .about-us__text {
-  margin-bottom: 40px;
   padding-left: 3px;
 
   &:last-of-type {
