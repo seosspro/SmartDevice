@@ -32,17 +32,15 @@
           <li class="page-header__contacts-item page-header__contacts-item--phone">
             <a href="tel:+74950005252" aria-label="Позвоните нам">+7 (495) 000 52 52</a>
           </li>
-          <li class="page-header__contacts-item page-header__contacts-item--call">
-            <a class="page-header__contacts-button button" href="#">Заказать звонок</a>
-          </li>
         </ul>
+        <button class="page-header__contacts-button" href="#">Заказать звонок</и>
       </div>
     </header>
     <main class="page-main">
       <section class="intro">
         <div class="intro__wrapper wrapper">
           <h2 class="intro__header">Печатные платы</h2>
-          <p class="intro__desc">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <p class="intro__desc">производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
           <a class="intro__button button" href="#ask-us">
             <span class="intro__button-text intro__button-text--desktop">Получить бесплатную консультацию</span>
             <span class="intro__button-text intro__button-text--mobile">Бесплатная консультация</span>
@@ -68,7 +66,7 @@
               </svg>
               <h3>Оперативные сроки</h3>
               <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость,
-                производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+                производить и&nbsp;доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки</p>
             </li>
             <li class="advantages__item">
               <svg fill="none" height="35" width="35" xmlns="http://www.w3.org/2000/svg">
@@ -83,7 +81,7 @@
               </svg>
               <h3>Крупные поставщики</h3>
               <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,
-                HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
+                HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими компаниями обеспичивает хорошее качество нашей продукции.
               </p>
             </li>
             <li class="advantages__item">
@@ -98,7 +96,7 @@
                 </g>
               </svg>
               <h3>Полная конфиденциальность</h3>
-              <p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
+              <p>По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную конфеденциальность.</p>
             </li>
             <li class="advantages__item">
               <svg fill="none" height="35" width="35" xmlns="http://www.w3.org/2000/svg">
@@ -217,16 +215,16 @@
             <b class="ask-us__header-desc">Мы проконсультируем Вас бесплатно</b>
             <form class="ask-us__form form" method="POST">
               <label class="visually-hidden" for="ask-us-name">Введите Ваше имя:</label>
-              <input type="text" name="name" placeholder="Имя" id="ask-us-name" required>
+              <input tabindex='1' type="text" name="name" placeholder="Имя" id="ask-us-name" required>
               <label class="visually-hidden" for="ask-us-phone">Введите Ваш номер телефона:</label>
-              <input type="tel" name="phone" id='ask-us-phone' placeholder="Телефон"
+              <input tabindex='2' class='imaskjs' type="tel" name="phone" id='ask-us-phone' placeholder="Телефон"
                 pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" data-inputmask="+{7}(000)000-00-00" required>
               <label class="visually-hidden" for="ask-us-question">Введите Ваш вопрос:</label>
-              <textarea name="question" cols="30" rows="6" placeholder="Ваш вопрос" id="ask-us-question"
+              <textarea tabindex='3' name="question" cols="30" rows="6" placeholder="Ваш вопрос" id="ask-us-question"
                 required></textarea>
-              <button class="ask-us__button" type="submit">Задать вопрос</button>
+              <button tabindex='5' class="ask-us__button" type="submit">Задать вопрос</button>
               <label class="form__checkbox">
-                <input class="visually-hidden" type="checkbox" name="agreement" required>
+                <input tabindex='4' class="visually-hidden" type="checkbox" name="agreement" required>
                 <span class=""></span>
                 Я согласен на обработку персональных данных
               </label>
@@ -241,15 +239,16 @@
         <b class="modal__header-desc">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</b>
         <form class="modal__form form" method="POST">
           <label class="visually-hidden" for="call-name">Введите Ваше имя:</label>
-          <input type="text" name="name" placeholder="Имя" id="call-name" required>
+          <input tabindex='6' type="text" name="name" placeholder="Имя" id="call-name" required>
           <label class="visually-hidden" for="call-phone">Введите Ваш номер телефона:</label>
-          <input type="tel" name="phone" placeholder="Телефон" id='call-phone'
+          <input tabindex='7' class='imaskjs' type="tel" name="phone" placeholder="Телефон" id='call-phone'
             pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" data-inputmask="+{7}(000)000-00-00" required>
           <label class="visually-hidden" for="call-question">Введите Ваш вопрос:</label>
-          <textarea name="question" cols="30" rows="6" placeholder="Ваш вопрос" id="call-question" required></textarea>
-          <button class="modal__button" type="submit">Отправить</button>
+          <textarea tabindex='8' name="question" cols="30" rows="6" placeholder="Ваш вопрос" id="call-question"
+            required></textarea>
+          <button tabindex='10' class="modal__button" type="submit">Отправить</button>
           <label class="form__checkbox">
-            <input class="visually-hidden" id="call-checkbox" type="checkbox" name="agreement" required>
+            <input tabindex='9' class="visually-hidden" id="call-checkbox" type="checkbox" name="agreement" required>
             <span></span>
             Я согласен на обработку персональных данных
           </label>
@@ -261,9 +260,7 @@
       <div class="page-footer__wrapper wrapper">
         <div class="page-footer__base">
           <a class="page-footer__logo-link" aria-label="Логотип 'Smart Device'">
-            <svg class="page-footer__logo page-footer__logo--desktop" width="202" height="52">
-              <use xlink:href="img/sprite_auto.svg#logo-smart-device"></use>
-            </svg>
+            <img class="page-footer__logo page-footer__logo--desktop" width="202" height="52" src="./img/logo-smart-device.svg" alt="logo-footer">
           </a>
           <ul class="page-footer__social social">
             <li class="social__item">
@@ -278,7 +275,7 @@
           </ul>
         </div>
         <div class="page-footer__nav nav accordion">
-          <div class="nav__heading-block">
+          <div class="nav__heading-block accordion__header">
             <h2 class="nav__header">Разделы сайта</h2>
             <button class="nav__toggle accordion__toggle" type="button"><span class="visually-hidden">Показать/Спрятать
                 разделы сайта</span></button>
@@ -294,7 +291,7 @@
           </ul>
         </div>
         <div class="page-footer__contacts contacts accordion">
-          <div class="contacts__heading-block">
+          <div class="contacts__heading-block accordion__header">
             <h2 class="contacts__header">Наш офис</h2>
             <button class="contacts__toggle accordion__toggle" type="button"><span
                 class="visually-hidden">Показать/Спрятать контактную информацию</span></button>

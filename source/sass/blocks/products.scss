@@ -26,12 +26,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  column-gap: 85px;
 }
 
 .products__item {
-  margin-right: 2.6%;
   max-height: 650px;
   margin-bottom: 30px;
+  width: 27%;
 
   &:nth-of-type(3n) {
     margin-right: 0;

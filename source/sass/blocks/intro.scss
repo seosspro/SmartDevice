@@ -22,6 +22,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: 240px;
   }
 }
 
@@ -104,12 +105,12 @@
     padding-top: 189px;
     padding-bottom: 153px;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 50px;
   }
 
   .intro__header {
-    font-size: 60px;
-    line-height: 70px;
+    font-size: 64px;
+    line-height: 75px;
     margin: 0;
     margin-bottom: 29px;
     letter-spacing: 4.2px;
@@ -132,7 +133,7 @@
   }
 
   .intro__button {
-    width: 379px;
+    width: 410px;
     margin-left: 51px;
   }
 
@@ -159,6 +160,10 @@
     padding-right: 10px;
     padding-bottom: 70px;
     padding-left: 15px;
+
+    @media (max-width: $mobile-width) {
+      padding-top: 160px;
+    }
   }
 
   .intro__header {
@@ -168,20 +173,36 @@
     margin: 0 auto 26px auto;
     letter-spacing: 2.8px;
     text-transform: uppercase;
+
+    @media (max-width: $mobile-width) {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
   }
 
   .intro__desc {
-    font-size: 16px;
-    line-height: 25px;
-    width: 100%;
+    font-size: 14px;
+    line-height: 155%;
     margin-bottom: 40px;
+    width: 100%;
     padding-left: 0;
   }
 
   .intro__button {
     width: 287px;
-    margin: 0 auto;
+    margin: 0;
     width: 100%;
+
+    @media (max-width: $mobile-width) {
+      height: 40px;
+      padding: 0;
+      padding-top: 10px;
+      width: 270px;
+    }
   }
 
   .intro__button-text--desktop {
@@ -190,6 +211,13 @@
 
   .intro__button-text--mobile {
     display: inline;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #f2f5f7;
   }
 }
 
