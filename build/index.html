@@ -241,16 +241,15 @@
         <b class="modal__header-desc">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</b>
         <form class="modal__form form" method="POST">
           <label class="visually-hidden" for="call-name">Введите Ваше имя:</label>
-          <input tabindex='6' type="text" name="name" placeholder="Имя" id="call-name" required>
+          <input type="text" name="name" placeholder="Имя" id="call-name" required>
           <label class="visually-hidden" for="call-phone">Введите Ваш номер телефона:</label>
-          <input tabindex='7' class='imaskjs' type="tel" name="phone" placeholder="Телефон" id='call-phone'
+          <input class='imaskjs' type="tel" name="phone" placeholder="Телефон" id='call-phone'
             pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" data-inputmask="+{7}(000)000-00-00" required>
           <label class="visually-hidden" for="call-question">Введите Ваш вопрос:</label>
-          <textarea tabindex='8' name="question" cols="30" rows="6" placeholder="Ваш вопрос" id="call-question"
-            required></textarea>
-          <button tabindex='10' class="modal__button" type="submit">Отправить</button>
+          <textarea name="question" cols="30" rows="6" placeholder="Ваш вопрос" id="call-question" required></textarea>
+          <button class="modal__button" type="submit">Отправить</button>
           <label class="form__checkbox">
-            <input tabindex='9' class="visually-hidden" id="call-checkbox" type="checkbox" name="agreement" required>
+            <input class="visually-hidden" id="call-checkbox" type="checkbox" name="agreement" required>
             <span></span>
             Я согласен на обработку персональных данных
           </label>

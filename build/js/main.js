@@ -57,6 +57,7 @@ import focusTrap from 'focus-trap';
     let body = document.querySelector('.body');
 
     const focusTrap = require('focus-trap');
+    const asd = focusTrap.createFocusTrap('.modal ')
     const modalFocusTrap = createFocusTrap('.modal'); // инициализируем плагин для модального окна
 
     link.addEventListener('click', (e) => {
