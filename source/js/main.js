@@ -1,4 +1,5 @@
 import IMask from 'imask';
+import focusTrap from 'focus-trap';
 
 (function () {
   let accordionItems = document.querySelectorAll('.accordion');
@@ -53,6 +54,36 @@ import IMask from 'imask';
     let message = popup.querySelector('#call-question');
     let isStorageSupport = true;
     let storage = {};
+    let body = document.querySelector('.body');
+
+    const focusTrap = require('focus-trap');
+    const modalFocusTrap = createFocusTrap('.modal'); // инициализируем плагин для модального окна
+
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      body.dataset.scrollY = getBodyScrollTop();
+
+      popup.classList.add('modal--show');
+      modalFocusTrap.activate(); // новая строка. Активируем плагин
+
+      if (existVerticalScroll()) {
+        body.classList.add('disable-scroll');
+        body.style.top = `-${body.dataset.scrollY}px`;
+      }
+    });
+
+    close.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      popup.classList.remove('modal--show');
+      modalFocusTrap.deactivate(); // новая строка. Отключаем плагин
+
+      if (existVerticalScroll()) {
+        body.classList.remove('disable-scroll');
+        window.scrollTo(0, body.dataset.scrollY);
+      }
+    });
 
     let openPopup = function () {
       popup.classList.add('modal--show');
