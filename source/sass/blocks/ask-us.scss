@@ -8,8 +8,8 @@
   @media (min-width: $tablet-width + 1px) {
     content: "";
     position: absolute;
-    left: -342px;
-    top: -320px;
+    left: -339px;
+    top: -315px;
     width: 1265px;
     height: 100%;
     background: rgba(4, 24, 39, 0.5);
@@ -41,6 +41,7 @@
   padding-right: 19px;
   padding-bottom: 73px;
   padding-left: 12px;
+  z-index: 3;
 }
 
 .ask-us__header {

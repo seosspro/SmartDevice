@@ -4,6 +4,12 @@
   justify-content: flex-start;
   padding: 0;
   list-style: none;
+  margin-right: 40px;
+  row-gap: 20px;
+
+  @media(max-width:$tablet-width){
+    margin-right: 0;
+  }
 }
 
 .social__item {

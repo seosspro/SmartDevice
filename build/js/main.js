@@ -55,10 +55,20 @@ import focusTrap from 'focus-trap';
     let isStorageSupport = true;
     let storage = {};
     let body = document.querySelector('.body');
+    let focusTrap = require('focus-trap');
+    let modalFocusTrap = focusTrap.createFocusTrap('.modal');
 
-    const focusTrap = require('focus-trap');
-    const asd = focusTrap.createFocusTrap('.modal ')
-    const modalFocusTrap = createFocusTrap('.modal'); // инициализируем плагин для модального окна
+    const existVerticalScroll = () => {
+      return document.body.offsetHeight > window.innerHeight;
+    };
+
+    const getBodyScrollTop = () => {
+      return (
+        self.pageYOffset ||
+        (document.documentElement && document.documentElement.ScrollTop) ||
+        (document.body && document.body.scrollTop)
+      );
+    };
 
     link.addEventListener('click', (e) => {
       e.preventDefault();
@@ -69,7 +79,7 @@ import focusTrap from 'focus-trap';
       modalFocusTrap.activate(); // новая строка. Активируем плагин
 
       if (existVerticalScroll()) {
-        body.classList.add('disable-scroll');
+        body.classList.add('body__lock');
         body.style.top = `-${body.dataset.scrollY}px`;
       }
     });
@@ -81,19 +91,19 @@ import focusTrap from 'focus-trap';
       modalFocusTrap.deactivate(); // новая строка. Отключаем плагин
 
       if (existVerticalScroll()) {
-        body.classList.remove('disable-scroll');
+        body.classList.remove('body__lock');
         window.scrollTo(0, body.dataset.scrollY);
       }
     });
 
     let openPopup = function () {
       popup.classList.add('modal--show');
-      document.body.classList.add('disable-scroll');
+      document.body.classList.add('disable__scroll');
     };
 
     let closePopup = function () {
       popup.classList.remove('modal--show');
-      document.body.classList.remove('disable-scroll');
+      document.body.classList.remove('disable__scroll');
     };
     try {
       storage.name = localStorage.getItem('name');
