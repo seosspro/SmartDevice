@@ -8,11 +8,13 @@
 
 .page-footer__wrapper {
   display: flex;
-  padding-top: 65px;
+  padding-top: 55px;
   padding-right: 19px;
   padding-bottom: 35px;
-  padding-left: 15px;
-  justify-content: center;
+  padding-left: 115px;
+  justify-content: end;
+  height: 280px;
+  padding-right: 310px;
 }
 
 .page-footer__base {
@@ -26,7 +28,8 @@
   width: 216px;
   height: 52px;
   margin-bottom: 35px;
-  margin-left: -5px;
+  margin-left: 42px;
+
 
   &:hover,
   &:focus {
@@ -38,14 +41,11 @@
   }
 }
 
-.page-footer__years-of-service {
-  display: none;
-}
-
 .page-footer__social {
   column-gap: 20px;
   list-style: none;
   display: flex;
+margin-left: 55px;
 }
 
 .page-footer__nav {
@@ -53,6 +53,7 @@
   width: 558px;
   margin: 0;
   padding: 0;
+  margin-top: 5px;
 }
 
 .page-footer__contacts {
@@ -68,6 +69,7 @@
     padding-right: 0;
     padding-bottom: 21px;
     padding-left: 0;
+    height: 465px;
   }
 
   .page-footer__base {
@@ -82,19 +84,6 @@
 
   .page-footer__logo-link {
     margin-bottom: 0;
-  }
-
-  .page-footer__years-of-service {
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 24px;
-    display: block;
-    padding-top: 17px;
-    padding-left: 19px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    opacity: 0.5;
-    color: $dark-grey;
   }
 
   .page-footer__social {
