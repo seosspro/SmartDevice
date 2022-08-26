@@ -1,5 +1,5 @@
 import IMask from 'imask';
-import focusTrap from 'focus-trap';
+import * as focusTrap from 'focus-trap';
 
 (function () {
   let accordionItems = document.querySelectorAll('.accordion');
@@ -55,7 +55,6 @@ import focusTrap from 'focus-trap';
     let isStorageSupport = true;
     let storage = {};
     let body = document.querySelector('.body');
-    let focusTrap = require('focus-trap');
     let modalFocusTrap = focusTrap.createFocusTrap('.modal');
 
     const existVerticalScroll = () => {
@@ -104,6 +103,7 @@ import focusTrap from 'focus-trap';
     let closePopup = function () {
       popup.classList.remove('modal--show');
       document.body.classList.remove('disable__scroll');
+      modalFocusTrap.deactivate();
     };
     try {
       storage.name = localStorage.getItem('name');
