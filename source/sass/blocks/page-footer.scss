@@ -8,28 +8,21 @@
 
 .page-footer__wrapper {
   display: flex;
+  padding: 0 20px;
   padding-top: 55px;
-  padding-right: 19px;
-  padding-bottom: 35px;
-  padding-left: 115px;
-  justify-content: end;
-  height: 280px;
-  padding-right: 310px;
+  max-width: 1220px;
+  min-height: 280px;
 }
 
 .page-footer__base {
   flex-shrink: 3;
   width: 416px;
-  min-width: 216px;
 }
 
 .page-footer__logo-link {
-  display: block;
-  width: 216px;
-  height: 52px;
+  width: 215px;
+  height: 55px;
   margin-bottom: 35px;
-  margin-left: 42px;
-
 
   &:hover,
   &:focus {
@@ -45,12 +38,11 @@
   column-gap: 20px;
   list-style: none;
   display: flex;
-margin-left: 55px;
+  margin-left: 55px;
 }
 
 .page-footer__nav {
   flex-shrink: 5;
-  width: 558px;
   margin: 0;
   padding: 0;
   margin-top: 5px;

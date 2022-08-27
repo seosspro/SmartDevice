@@ -1,7 +1,7 @@
 .form {
-  flex-direction: row;
+  display: flex;
+  gap: 20px 35px;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
 
   input[type="text"],
@@ -43,8 +43,8 @@
 
   input[type="checkbox"] + span {
     position: absolute;
-    top: 38px;
-    left: 50px;
+    top: 35px;
+    left: 15px;
     width: 16px;
     height: 16px;
     opacity: 0.4;

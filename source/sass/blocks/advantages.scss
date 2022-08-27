@@ -86,10 +86,10 @@
     width: 320px;
     height: 360px;
     min-height: 233px;
-    padding-top: 22px;
+    padding-top: 42px;
     padding-right: 20px;
     padding-bottom: 3px;
-    padding-left: 25px;
+    padding-left: 40px;
     border-left: 5px solid $baby-blue;
 
     .advantages__list {
@@ -131,9 +131,12 @@
     }
 
     h3 {
-      font-size: 20px;
-      line-height: 32px;
       margin-bottom: 5px;
+      font-family: "Roboto Condensed";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 34px;
     }
 
     p {

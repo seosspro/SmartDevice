@@ -13,8 +13,6 @@
   letter-spacing: 0.78px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.7);
-  padding-left: 2.4px;
-  margin-bottom: 10px;
 }
 
 .contacts__list {
@@ -24,6 +22,7 @@
   margin: 0;
   padding: 0;
   row-gap: 10px;
+  padding-top: 10px;
 }
 
 .contacts__item {

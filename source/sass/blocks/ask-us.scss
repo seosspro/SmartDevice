@@ -55,19 +55,21 @@
   margin: 0;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 13px;
   color: $white;
 }
 
 .ask-us__btn-wrapper {
   display: flex;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
 }
 
 .ask-us__header-desc {
   font-weight: 400;
   display: block;
   margin-bottom: 37px;
-  margin-left: 13px;
   padding-left: 4px;
   color: $white;
 }
@@ -99,7 +101,6 @@
     font-family: "Roboto Condensed";
     flex-grow: 1;
     min-width: 265px;
-    margin-left: 20px;
     height: 45px;
     padding-top: 17px;
     padding-bottom: 14px;
@@ -115,6 +116,7 @@
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.05em;
+    margin-right: 35px;
     text-transform: uppercase;
 
     @media (max-width: $mobile-width) {
@@ -127,8 +129,8 @@
     line-height: 16px;
     flex-grow: 1;
     width: 260px;
-    padding-top: 32px;
-    padding-left: 75px;
+    padding-top: 28px;
+    padding-left: 45px;
   }
 }
 
@@ -137,8 +139,13 @@
     background-image: none;
   }
 
+  .ask-us__wrapper {
+    justify-content: flex-start;
+  }
+
   .ask-us__wrapper-column {
-    width: 100%;
+    width: 620px;
+    max-height: 580px;
     padding-top: 77px;
     padding-right: 70px;
     padding-bottom: 64px;
@@ -151,16 +158,16 @@
   }
 
   .ask-us__header-desc {
-    margin-bottom: 56px;
     padding-left: 5px;
   }
 
   .ask-us__form {
     padding-left: 2px;
-
+    flex-direction: column;
     input[type="text"],
     input[type="tel"],
     textarea {
+      flex-grow: unset;
       width: 270px;
       margin-right: 15px;
       margin-bottom: 42px;
@@ -170,13 +177,16 @@
 
     textarea {
       width: 100%;
-      height: 159px;
-      margin-bottom: 46px;
+      height: 155px;
     }
   }
 }
 
 @media (max-width: $mobile-width) {
+  .ask-us {
+    min-height: 750px;
+  }
+
   .ask-us__wrapper {
     flex-direction: column;
     padding: 0;
@@ -194,36 +204,38 @@
     font-size: 28px;
     line-height: 39px;
     margin-bottom: 13px;
-    margin-left: 0;
+    max-width: 270px;
   }
 
   .ask-us__header-desc {
     line-height: 22px;
-    margin-bottom: 26px;
-    margin-left: 0;
+    margin-bottom: 40px;
     padding-left: 0;
+    max-width: 270px;
   }
 
   .ask-us__form {
     flex-direction: column;
     padding-left: 0;
 
+    button {
+      width: 270px;
+      height: 45px;
+    }
+
     input[type="text"],
     input[type="tel"],
     textarea {
-      width: 100%;
       margin-right: 0;
-      margin-bottom: 31px;
-      margin-left: 0;
     }
 
     textarea {
-      height: 104px;
+      height: 180px;
+      max-width: 270px;
       margin-bottom: 30px;
     }
 
     .form__checkbox {
-      width: 100%;
       margin-right: 0;
       margin-bottom: 22px;
       margin-left: 0;
