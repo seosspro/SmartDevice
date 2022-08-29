@@ -85,10 +85,8 @@ import * as focusTrap from 'focus-trap';
 
     close.addEventListener('click', (e) => {
       e.preventDefault();
-
       popup.classList.remove('modal--show');
       modalFocusTrap.deactivate(); // новая строка. Отключаем плагин
-
       if (existVerticalScroll()) {
         body.classList.remove('body__lock');
         window.scrollTo(0, body.dataset.scrollY);
@@ -97,12 +95,12 @@ import * as focusTrap from 'focus-trap';
 
     let openPopup = function () {
       popup.classList.add('modal--show');
-      document.body.classList.add('disable__scroll');
+      document.body.classList.add('disable-scroll');
     };
 
     let closePopup = function () {
       popup.classList.remove('modal--show');
-      document.body.classList.remove('disable__scroll');
+      document.body.classList.remove('disable-scroll');
       modalFocusTrap.deactivate();
     };
     try {

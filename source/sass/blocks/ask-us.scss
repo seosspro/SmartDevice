@@ -131,6 +131,12 @@
     width: 260px;
     padding-top: 28px;
     padding-left: 45px;
+
+    @media (max-width: $tablet-width) {
+      padding-top: 20px;
+      padding-left: 70px;
+      width: 350px;
+    }
   }
 }
 
@@ -140,76 +146,83 @@
   }
 
   .ask-us__wrapper {
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .ask-us__wrapper-column {
-    width: 620px;
     max-height: 580px;
-    padding-top: 77px;
-    padding-right: 70px;
-    padding-bottom: 64px;
-    padding-left: 74px;
+    max-width: 700px;
+    padding-top: 35px;
+    padding-bottom: 124px;
+    padding-left: 15px;
   }
 
   .ask-us__header {
-    font-size: 32px;
-    margin-bottom: 16px;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
   }
 
   .ask-us__header-desc {
-    padding-left: 5px;
+    margin-bottom: 25px;
   }
 
   .ask-us__form {
-    padding-left: 2px;
-    flex-direction: column;
     input[type="text"],
     input[type="tel"],
     textarea {
-      flex-grow: unset;
-      width: 270px;
-      margin-right: 15px;
-      margin-bottom: 42px;
-      margin-left: 16px;
+      flex-direction: column;
+      flex-grow: 1;
+      max-width: 320px;
+      margin-bottom: 20px;
       padding-bottom: 18px;
+      height: 55px;
+    }
+
+    input[type="text"] {
+      margin-right: 30px;
     }
 
     textarea {
-      width: 100%;
+      max-width: 670px;
+      padding-top: 25px;
+      padding-left: 15px;
       height: 155px;
     }
   }
 }
 
 @media (max-width: $mobile-width) {
-  .ask-us {
-    min-height: 750px;
-  }
-
   .ask-us__wrapper {
     flex-direction: column;
     padding: 0;
   }
 
   .ask-us__wrapper-column {
+    min-height: 750px;
     min-width: 320px;
     padding-top: 30px;
     padding-right: 15px;
     padding-bottom: 20px;
-    padding-left: 15px;
+    padding-left: 25px;
   }
 
   .ask-us__header {
-    font-size: 28px;
-    line-height: 39px;
-    margin-bottom: 13px;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 140.62%;
+    margin-bottom: 5px;
+    margin-top: 15px;
     max-width: 270px;
   }
 
   .ask-us__header-desc {
     line-height: 22px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding-left: 0;
     max-width: 270px;
   }
@@ -219,7 +232,7 @@
     padding-left: 0;
 
     button {
-      width: 270px;
+      width: 90%;
       height: 45px;
     }
 
@@ -227,18 +240,29 @@
     input[type="tel"],
     textarea {
       margin-right: 0;
+      width: 97%;
+      max-width: none;
+    }
+
+    input[type="text"] {
+      margin-bottom: 10px;
+    }
+
+    input[type="tel"] {
+      padding-top: 20px;
     }
 
     textarea {
       height: 180px;
-      max-width: 270px;
-      margin-bottom: 30px;
+      width: 97%;
+      margin-bottom: 15px;
+      padding-top: 22px;
     }
 
     .form__checkbox {
-      margin-right: 0;
-      margin-bottom: 22px;
-      margin-left: 0;
+      margin-top: 5px;
+      padding-left: 30px;
+      width: 250px;
     }
   }
 }

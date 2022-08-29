@@ -15,7 +15,6 @@
   display: -webkit-box;
   padding: 28px 19px 33px 16px;
   justify-content: space-between;
-  align-items: center;
   max-width: 1220px;
 }
 
@@ -60,6 +59,7 @@
   height: 40px;
   white-space: nowrap;
   margin-right: 25px;
+  margin-top: 10px;
 
   &:hover {
     background-color: white;

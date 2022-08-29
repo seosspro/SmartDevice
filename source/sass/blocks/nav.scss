@@ -1,10 +1,6 @@
 .nav__heading-block {
   margin-bottom: 15px;
   padding-left: 2px;
-
-  @media (max-width: $mobile-width) {
-    border-top: 1px solid rgba(248, 253, 255, 0.7);
-  }
 }
 
 .nav__header {
@@ -29,18 +25,20 @@
   margin: 0;
   padding: 0;
   padding: 5px;
-  row-gap: 5px;
+  row-gap: 8px;
 }
 
 .nav__item {
-  min-width: 135px;
-  margin-right: 15px;
+  max-width: 220px;
+  width: 100%;
   list-style: none;
 }
 
 .nav__link {
-  font-size: 15px;
-  line-height: 25px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
   opacity: 0.5;
   color: rgba(255, 255, 255, 0.7);
 

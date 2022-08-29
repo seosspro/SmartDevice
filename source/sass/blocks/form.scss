@@ -4,6 +4,10 @@
   flex-wrap: wrap;
   margin: 0;
 
+@media(max-width:$tablet-width){
+  gap: unset;
+}
+
   input[type="text"],
   input[type="tel"],
   textarea {
@@ -49,6 +53,16 @@
     height: 16px;
     opacity: 0.4;
     border: 1px solid $white;
+
+    @media(max-width:$tablet-width) {
+      top: 25px;
+      left: 48px;
+    }
+
+    @media(max-width:$mobile-width) {
+      top: 26px;
+      left: 8px;
+    }
   }
 
   input[type="checkbox"]:checked + span {
