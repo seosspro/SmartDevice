@@ -55,13 +55,13 @@
     border: 1px solid $white;
 
     @media(max-width:$tablet-width) {
-      top: 25px;
+      top: 30px;
       left: 48px;
     }
 
     @media(max-width:$mobile-width) {
-      top: 26px;
-      left: 8px;
+      top: 30px;
+      left: 6px;
     }
   }
 

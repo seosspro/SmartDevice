@@ -13,8 +13,8 @@
   @media (min-width: $tablet-width + 1px) {
     content: "";
     position: absolute;
-    left: -445px;
-    top: -322px;
+    left: -455px;
+    top: -305px;
     width: 1310px;
     height: 100%;
     background: rgba(4, 24, 39, 0.5);
@@ -75,6 +75,7 @@
 }
 
 .ask-us__form {
+  margin-left: 10px;
   input[type="text"],
   input[type="tel"],
   textarea {
@@ -109,7 +110,7 @@
     text-transform: uppercase;
     background: #041427;
     border-radius: 3px;
-    margin-top: 15px;
+    margin-top: 12px;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -133,7 +134,7 @@
     padding-left: 45px;
 
     @media (max-width: $tablet-width) {
-      padding-top: 20px;
+      padding-top: 25px;
       padding-left: 70px;
       width: 350px;
     }
@@ -151,10 +152,10 @@
 
   .ask-us__wrapper-column {
     max-height: 580px;
-    max-width: 700px;
+    max-width: 740px;
     padding-top: 35px;
     padding-bottom: 124px;
-    padding-left: 15px;
+    padding-left: 25px;
   }
 
   .ask-us__header {
@@ -163,16 +164,17 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 51px;
+    margin-left: 10px;
   }
 
   .ask-us__header-desc {
     margin-bottom: 25px;
+    margin-left: 8px;
   }
 
   .ask-us__form {
     input[type="text"],
-    input[type="tel"],
-    textarea {
+    input[type="tel"] {
       flex-direction: column;
       flex-grow: 1;
       max-width: 320px;
@@ -189,6 +191,7 @@
       max-width: 670px;
       padding-top: 25px;
       padding-left: 15px;
+      margin-bottom: 15px;
       height: 155px;
     }
   }
@@ -203,10 +206,10 @@
   .ask-us__wrapper-column {
     min-height: 750px;
     min-width: 320px;
-    padding-top: 30px;
+    padding-top: 32px;
     padding-right: 15px;
     padding-bottom: 20px;
-    padding-left: 25px;
+    padding-left: 15px;
   }
 
   .ask-us__header {
@@ -222,7 +225,7 @@
 
   .ask-us__header-desc {
     line-height: 22px;
-    margin-bottom: 30px;
+    margin-bottom:28px;
     padding-left: 0;
     max-width: 270px;
   }
@@ -255,12 +258,12 @@
     textarea {
       height: 180px;
       width: 97%;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       padding-top: 22px;
     }
 
     .form__checkbox {
-      margin-top: 5px;
+      margin-top: 1px;
       padding-left: 30px;
       width: 250px;
     }

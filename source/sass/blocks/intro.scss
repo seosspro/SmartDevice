@@ -97,7 +97,6 @@
     background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      min-height: 686px;
       background-image: url("../img/bg-header-board-tablet@2x.png");
       background-size: cover;
     }
@@ -105,7 +104,7 @@
 
   .intro__wrapper {
     padding-top: 180px;
-    padding-bottom: 153px;
+    padding-bottom:205px;
     text-align: left;
     padding-left: 50px;
   }
@@ -148,7 +147,6 @@
 
 @media (max-width: $mobile-width) {
   .intro {
-    min-height: 647px;
     background-image: url("../img/bg-header-board-mobile@1x.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,7 +160,7 @@
   .intro__wrapper {
     padding-top: 150px;
     padding-right: 10px;
-    padding-bottom: 190px;
+    padding-bottom: 170px;
     padding-left: 25px;
   }
 

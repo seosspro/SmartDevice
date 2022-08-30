@@ -21,8 +21,6 @@
 }
 
 .page-footer__logo-link {
-  margin-bottom: 35px;
-
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -38,6 +36,8 @@
   list-style: none;
   display: flex;
   margin-left: 15px;
+  margin-top: 30px;
+  margin-bottom: 35px;
 }
 
 .page-footer__nav {
@@ -118,7 +118,6 @@
     margin: 0;
     padding: 0;
     border-top: 1px solid rgba(248, 253, 255, 0.7);
-
   }
 
   .page-footer__contacts {
