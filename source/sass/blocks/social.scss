@@ -10,6 +10,12 @@
   @media(max-width:$tablet-width){
     margin-right: 0;
   }
+
+  @media(max-width:$mobile-width){
+    margin-right: 10px;
+    column-gap: 20px;
+    margin-bottom: 30px;
+  }
 }
 
 .social__item {

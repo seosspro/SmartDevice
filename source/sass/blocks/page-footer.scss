@@ -9,7 +9,7 @@
 .page-footer__wrapper {
   display: flex;
   padding: 0 20px;
-  padding-top: 55px;
+  padding-top: 45px;
   max-width: 1320px;
   min-height: 280px;
 }
@@ -43,7 +43,6 @@
 .page-footer__nav {
   padding: 0;
   margin: 9px 0 0;
-  max-width: 481px;
   width: 100%;
 }
 
@@ -86,8 +85,8 @@
     width: 50%;
     min-width: 235px;
     padding-right: 15px;
-    padding-bottom: 15px;
-    padding-left: 45px;
+    padding-bottom: 25px;
+    padding-left: 47px;
   }
 
   .page-footer__contacts {
@@ -111,6 +110,7 @@
 
   .page-footer__logo-link {
     margin-left: -10px;
+    margin-bottom: 10px;
   }
 
   .page-footer__nav {

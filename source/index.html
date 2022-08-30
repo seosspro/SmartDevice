@@ -220,20 +220,20 @@
             <b class="ask-us__header-desc">Мы проконсультируем Вас бесплатно</b>
             <form class="ask-us__form form" method="POST">
               <label class="visually-hidden" for="ask-us-name">Введите Ваше имя:</label>
-              <input tabindex='1' type="text" name="name" placeholder="Имя" id="ask-us-name" required>
+              <input type="text" name="name" placeholder="Имя" id="ask-us-name" required>
               <label class="visually-hidden" for="ask-us-phone">Введите Ваш номер телефона:</label>
-              <input tabindex='2' class='imaskjs' type="tel" name="phone" id='ask-us-phone' placeholder="Телефон"
+              <input class='imaskjs' type="tel" name="phone" id='ask-us-phone' placeholder="Телефон"
                 pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" data-inputmask="+{7}(000)000-00-00" required>
               <label class="visually-hidden" for="ask-us-question">Введите Ваш вопрос:</label>
-              <textarea tabindex='3' name="question" cols="30" rows="6" placeholder="Ваш вопрос" id="ask-us-question"
+              <textarea name="question" cols="30" rows="6" placeholder="Ваш вопрос" id="ask-us-question"
                 required></textarea>
               <div class='ask-us__btn-wrapper'>
-                <button tabindex='5' class="ask-us__button" type="submit">Задать вопрос</button>
                 <label class="form__checkbox">
-                  <input tabindex='4' class="visually-hidden" type="checkbox" name="agreement" required>
+                  <input class="visually-hidden" type="checkbox" name="agreement" required>
                   <span class=""></span>
                   Я согласен на обработку персональных данных
                 </label>
+                <button class="ask-us__button" type="submit">Задать вопрос</button>
               </div>
             </form>
           </div>
