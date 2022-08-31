@@ -35,8 +35,8 @@
   column-gap: 20px;
   list-style: none;
   display: flex;
-  margin-left: 15px;
-  margin-top: 30px;
+  margin-left: 17px;
+  margin-top: 35px;
   margin-bottom: 35px;
 }
 
@@ -44,6 +44,10 @@
   padding: 0;
   margin: 9px 0 0;
   width: 100%;
+
+  @media (min-width: $tablet-width + 1px) {
+      max-width: 481px;
+  }
 }
 
 .page-footer__contacts {
@@ -55,7 +59,7 @@
 @media (max-width: $tablet-width) {
   .page-footer__wrapper {
     flex-wrap: wrap;
-    padding-top: 19px;
+    padding-top: 10px;
     padding-right: 0;
     padding-bottom: 21px;
     padding-left: 0;
@@ -78,7 +82,7 @@
 
   .page-footer__social {
     margin-top: 10px;
-    padding-right: 15px;
+    padding-right: 10px;
   }
 
   .page-footer__nav {
